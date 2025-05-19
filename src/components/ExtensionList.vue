@@ -26,9 +26,11 @@ function removeItem(itemToRemove) {
 
 <template>
     <Transition appear name="fade">
-        <section class="mt-10 grid gap-y-8">
+        <section class="grid gap-y-10 md:gap-y-8">
             <div class="grid gap-y-5 md:flex md:justify-between align-middle">
-                <h1 class="text-center text-4xl font-bold">Extension List</h1>
+                <h1 class="text-center text-[32px] font-bold">
+                    Extensions List
+                </h1>
                 <div class="flex justify-center gap-3">
                     <FilterButton
                         :name="'All'"
@@ -47,7 +49,6 @@ function removeItem(itemToRemove) {
                     />
                 </div>
             </div>
-
             <div>
                 <TransitionGroup
                     appear

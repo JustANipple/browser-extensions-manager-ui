@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
     <Transition appear name="fade">
         <button
-            class="shadow-sm px-4.5 rounded-3xl text-xl font-normal border-neutral cursor-pointer"
+            class="shadow-sm px-5 py-2 rounded-3xl text-xl font-normal border-neutral cursor-pointer"
             :class="{
                 [isActive ? 'bg-accent text-accent-content' : 'bg-primary']:
                     true,
