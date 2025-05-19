@@ -37,7 +37,9 @@ onMounted(() => {
                 <img :src="imgUrl" alt="Extensions" />
             </div>
             <div class="flex-none">
-                <label class="swap swap-rotate bg-neutral p-3 rounded-xl">
+                <label
+                    class="swap swap-rotate bg-neutral p-3 rounded-xl hover:bg-[#c6c6c6]"
+                >
                     <input
                         type="checkbox"
                         class="theme-controller"

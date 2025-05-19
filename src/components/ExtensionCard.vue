@@ -34,7 +34,7 @@ const props = defineProps({
         </div>
         <div class="flex justify-between">
             <button
-                class="btn bg-primary rounded-3xl shadow-sm text-primary-content border-neutral text-[16px]"
+                class="btn bg-primary rounded-3xl shadow-sm text-primary-content border-neutral text-[16px] hover:bg-accent hover:text-accent-content focus:outline-accent"
                 @click="$emit('remove')"
             >
                 Remove
@@ -42,7 +42,7 @@ const props = defineProps({
             <input
                 type="checkbox"
                 :checked="props.isActive"
-                class="toggle toggle-sm bg-neutral checked:bg-accent checked:border-accent checked:text-accent-content my-auto"
+                class="toggle toggle-sm bg-neutral checked:bg-accent checked:border-accent checked:text-accent-content my-auto hover:opacity-70 focus:outline-accent"
             />
         </div>
     </div>
